@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "types": ["@types/node"]
+  },
+  "include": ["src/*", "src/**/*"],
+  "exclude": ["dist", "build", "node_modules"]
+}

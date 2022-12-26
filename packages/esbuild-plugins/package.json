@@ -1,0 +1,11 @@
+{
+  "name": "esbuild-plugins",
+  "version": "0.0.0",
+  "private": true,
+  "files": [
+    "make-all-packages-external.js"
+  ],
+  "devDependencies": {
+    "esbuild": "^0.15.12"
+  }
+}

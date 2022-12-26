@@ -1,0 +1,23 @@
+{
+  "name": "cli",
+  "version": "0.0.0",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "license": "MIT",
+  "bin": "./dist/index.mjs",
+  "scripts": {
+    "lint": "eslint src/*.ts*",
+    "build": "node scripts/build.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.6",
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "workspace:*",
+    "tsconfig": "workspace:*",
+    "esbuild-plugins": "workspace:*",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "esbuild": "^0.15.12"
+  }
+}
