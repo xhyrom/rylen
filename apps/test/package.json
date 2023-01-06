@@ -8,7 +8,8 @@
     "dev": "cli index.ts && node dist/worker.mjs"
   },
   "dependencies": {
-    "rylen": "workspace:*",
-    "cli": "workspace:*"
+    "@discordjs/builders": "^1.4.0",
+    "cli": "workspace:*",
+    "rylen": "workspace:*"
   }
 }

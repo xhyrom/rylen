@@ -1,73 +1,38 @@
-# Turborepo starter
+<h1 align="center">
+  <br>
+  <img src="https://github.com/xHyroM/website/blob/main/src/assets/logo.png?raw=true" alt="Rylen" width="256">
+  <br>
+</h1>
 
-This is an official pnpm starter turborepo.
+<h4 align="center">Source code for rylen, a powerful discord library for serverless bots.</h4>
 
-## What's inside?
+<p align="center">
+    <a href="https://discord.gg/kFPKmEKeMS/" alt="Discord">
+        <img src="https://img.shields.io/discord/1046534628577640528?label=discord&style=for-the-badge&color=2fbfc4"/>
+    </a>
+</p>
 
-This turborepo uses [pnpm](https://pnpm.io) as a package manager. It includes the following packages/apps:
+## Setup
 
-### Apps and Packages
+1. Clone this repository: `git clone https://github.com/xHyroM/rylen.git`
+2. Navigate to the project directory: `cd rylen`
+3. Install the dependencies: `pnpm install`
 
-- `docs`: a [Next.js](https://nextjs.org) app
-- `web`: another [Next.js](https://nextjs.org) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
+## Usage
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+-   To build the project, run `pnpm build`
+-   To run development mode, run `pnpm dev`
 
-### Utilities
+## Contributing
 
-This turborepo has some additional tools already setup for you:
+To contribute to this project, please follow the [standard Git workflow](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository#The-Standard-Git-Workflow) and [CONTRIBUTING](./CONTRIBUTING.md).
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+1. Fork this repository
+2. Create a new branch for your changes: `git checkout -b my-feature`
+3. Commit your changes: `git commit -am "Add my feature"`
+4. Push the branch: `git push origin my-feature`
+5. Open a pull request
 
-### Build
+## License
 
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm run build
-```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm run dev
-```
-
-### Remote Caching
-
-Turborepo can use a technique known as [Remote Caching](https://turborepo.org/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-pnpm dlx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your turborepo:
-
-```
-pnpm dlx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Pipelines](https://turborepo.org/docs/core-concepts/pipelines)
-- [Caching](https://turborepo.org/docs/core-concepts/caching)
-- [Remote Caching](https://turborepo.org/docs/core-concepts/remote-caching)
-- [Scoped Tasks](https://turborepo.org/docs/core-concepts/scopes)
-- [Configuration Options](https://turborepo.org/docs/reference/configuration)
-- [CLI Usage](https://turborepo.org/docs/reference/command-line-reference)
+This project is licensed under the [MIT License](LICENSE).

@@ -1,5 +1,6 @@
-import { SlashCommandData } from './types';
+import Commands from "../stores/Commands";
+import { SlashCommandData } from "./types";
 
 export function $slashCommand(data: SlashCommandData) {
-    console.log(data);
+    Commands.addCommand(data);
 }

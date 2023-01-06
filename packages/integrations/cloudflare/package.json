@@ -1,0 +1,5 @@
+{
+    "name": "@rylen/cloudflare",
+    "version": "0.0.1",
+    "description": "Cloudflare Workers support for rylen"
+}
