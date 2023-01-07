@@ -1,5 +1,24 @@
 {
     "name": "@rylen/node",
     "version": "0.0.1",
-    "description": "Node.js support for rylen"
+    "description": "Node.js support for rylen",
+    "main": "./dist/index.mjs",
+    "types": "./src/index.ts",
+    "license": "MIT",
+    "scripts": {
+        "lint": "eslint src/*.ts*",
+        "build": "node scripts/build.mjs"
+    },
+    "devDependencies": {
+        "discord-api-types": "^0.37.26",
+        "esbuild": "^0.15.12",
+        "esbuild-plugins": "workspace:*",
+        "rylen": "workspace:*",
+        "tsconfig": "workspace:*",
+        "typescript": "^4.5.2"
+    },
+    "dependencies": {
+        "discord-verify": "^1.0.0",
+        "fastify": "^4.11.0"
+    }
 }

@@ -1,37 +1,36 @@
-import {
-    $slashCommand,
-    $buttonComponent,
-    BasicOptionBuilder,
-    OptionBuilder,
-} from "rylen";
-import ButtonComponents from "rylen/src/stores/ButtonComponents";
-import Commands from "rylen/src/stores/Commands";
+import { $slashCommand, ButtonBuilder, Commands, use } from "rylen";
+import nodeIntegration from "@rylen/node";
 
-const button = $buttonComponent({
-    label: "Hello",
-    style: 4,
-    customId: "hello",
-
-    handle: (interaction) => {
-        console.log(interaction);
-    },
-});
+use(
+    nodeIntegration({
+        port: 8080,
+        stores: { commands: Commands },
+        auth: {
+            publicKey:
+                "6b295920e4c882c3173206fb50cde243f2aff29f8ddd5dcaa9e9f7bc230683ff",
+        },
+    })
+);
 
 $slashCommand({
-    name: "test",
-    description: "test",
-    options: OptionBuilder.create()
-        .subcommand(
-            "test",
-            "Hello",
-            BasicOptionBuilder.create().mentionable("Lol", "Lolík", {
-                required: true,
-            })
-        )
-        .build(),
-    handle(interaction) {
-        this.reply("ahoj").addComponents([button]);
+    name: "ping",
+    description: "ping",
+    handle(ctx, interaction) {
+        console.log("hm");
+        ctx.reply({
+            content: "lol",
+            components: [
+                {
+                    type: 1,
+                    components: [
+                        ButtonBuilder.create()
+                            .label("Ahoj")
+                            .style(1)
+                            .customId("ahoj")
+                            .build(),
+                    ],
+                },
+            ],
+        });
     },
 });
-
-console.log(ButtonComponents.getButton("hello"), Commands);

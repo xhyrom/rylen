@@ -7,12 +7,16 @@ import {
     ButtonStyle,
     APIMessageComponentEmoji,
 } from "discord-api-types/v10";
+import { ICommandContext } from "../structures";
 
 export interface SlashCommandData {
     name: string;
     description: string;
     options?: APIApplicationCommandOption[];
-    handle: (interaction: APIApplicationCommandInteraction) => void;
+    handle: (
+        ctx: ICommandContext,
+        interaction: APIApplicationCommandInteraction
+    ) => void;
 }
 
 export interface ButtonComponentDataBase {

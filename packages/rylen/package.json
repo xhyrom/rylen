@@ -1,7 +1,7 @@
 {
     "name": "rylen",
     "version": "0.0.1",
-    "main": "./src/index.ts",
+    "main": "./dist/index.mjs",
     "types": "./src/index.ts",
     "license": "MIT",
     "scripts": {

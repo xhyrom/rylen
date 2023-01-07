@@ -1,15 +1,17 @@
 {
-  "name": "test",
-  "version": "0.0.0",
-  "main": "./index.ts",
-  "types": "./index.ts",
-  "license": "MIT",
-  "scripts": {
-    "dev": "cli index.ts && node dist/worker.mjs"
-  },
-  "dependencies": {
-    "@discordjs/builders": "^1.4.0",
-    "cli": "workspace:*",
-    "rylen": "workspace:*"
-  }
+    "name": "test",
+    "version": "0.0.0",
+    "main": "./index.ts",
+    "types": "./index.ts",
+    "license": "MIT",
+    "scripts": {
+        "dev": "cli index.ts && node dist/worker.mjs"
+    },
+    "dependencies": {
+        "@discordjs/builders": "^1.4.0",
+        "@rylen/node": "workspace:*",
+        "cli": "workspace:*",
+        "fastify": "^4.11.0",
+        "rylen": "workspace:*"
+    }
 }
